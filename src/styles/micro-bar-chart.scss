@@ -1,0 +1,83 @@
+@import 'common.scss';
+
+.micro-bar-chart {
+  .axis {
+    line, path {
+      fill: none;
+    }
+    path {
+      display: none;
+    }
+  }
+  .y.axis {
+    fill: orange;
+    path {
+      display: none;
+    }
+    .tick line {
+      display: none;
+    }
+    .tick text {
+      font-size: 11px;
+      fill: $grey;
+    }
+    .tick:first-child {
+      display: none;
+    }
+  }
+  .x.axis {
+    .tick line {
+      stroke: $darkest-grey;
+    }
+    path {
+      display: none;
+    }
+    text {
+      text-transform: uppercase;
+      color: $dark-grey;
+      font-size: 11px;
+    }
+  }
+  path.line {
+    fill: none;
+    stroke: red;
+    stroke-width: 1.5px;
+  }
+  .grid line {
+    stroke: $light-grey;
+    shape-rendering: crispEdges;
+    width: 1px;
+  }
+  .grid line:last-child {
+    stroke: $darkest-grey;
+  }
+  .bars {
+    fill: pink;
+  }
+  .bar {
+    fill: $chart-blue;
+    shape-rendering: crispEdges;
+  }
+  .bar.hover,
+  .bar:hover {
+    fill: $chart-orange;
+  }
+  .vertical-bar {
+    fill: transparent;
+    shape-rendering: crispEdges;
+    &.hover,
+    &:hover {
+      fill: $chart-highlight;
+      opacity: 0.2;
+    }
+  }
+  .hover-bar {
+    fill: transparent;
+  }
+}
+.empty-chart-msg {
+  pointer-events: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  fill: $light-grey;
+}

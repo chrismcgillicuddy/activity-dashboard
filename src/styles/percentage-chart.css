@@ -1,0 +1,22 @@
+.percentage-chart rect {
+  shape-rendering: crispEdges; }
+
+.percentage-chart text {
+  border-top: 1px solid #6B7D8B;
+  fill: #6B7D8B;
+  font-size: 11px;
+  font-weight: 300;
+  height: 15px;
+  position: relative;
+  text-transform: uppercase; }
+
+.percentage-chart .percent-bar.hover,
+.percentage-chart .color-key.hover {
+  fill: #be64ac !important; }
+
+.percentage-chart .label {
+  fill: #333f48; }
+
+.percentage-chart .label.hover {
+  fill: #333f48;
+  cursor: pointer; }

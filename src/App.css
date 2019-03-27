@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,500");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500");
+* {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1;
+  color: black;
+  background: white; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: "" ""; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: ""; }
+
+a img {
+  border: none; }
+
+body {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: "IBM Plex Sans", helvetica, arial, sans-serif;
+  color: #000; }
+
+.loading body {
+  visibility: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "IBM Plex Sans", helvetica, arial, sans-serif;
+  *font-weight: normal; }
+
+h1 {
+  font-size: 19px; }
+
+h2 {
+  font-size: 18px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 15px; }
+
+h5 {
+  font-size: 14px; }
+
+p {
+  font-size: 12px; }
+
+strong {
+  font-weight: bold; }
+
+abbr {
+  border-width: 0 0 1px 0;
+  border-style: dashed;
+  cursor: pointer; }
+
+a {
+  color: #2065c5; }
+
+a:visited {
+  color: #2065c5; }
+
+a:focus {
+  color: #000; }
+
+a:hover {
+  color: #000; }
+
+a:active {
+  color: #000; }
+
+a.inactive {
+  color: #333;
+  cursor: default;
+  text-decoration: none; }
+
+.wizard-module {
+  margin: 20px 0 0 0; }
+
+.separator {
+  display: block;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd; }
+
+.word-break {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word; }
+
+.center {
+  text-align: center; }
+
+.centered {
+  margin-left: auto;
+  margin-right: auto !important; }
+
+.right {
+  display: block;
+  float: right; }
+
+.align-right {
+  text-align: right; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.clear-both {
+  display: block;
+  clear: both; }
+
+.clear-left {
+  display: block;
+  clear: left; }
+
+br.clear-both, br.clear-left {
+  height: 0px; }
+
+.hide {
+  display: none; }
+
+.full {
+  width: 100%; }
+
+.span-1 {
+  width: 40px; }
+
+.span-2 {
+  width: 100px; }
+
+.span-3 {
+  width: 160px; }
+
+.span-4 {
+  width: 220px; }
+
+.span-5 {
+  width: 280px; }
+
+.span-6 {
+  width: 340px; }
+
+.span-7 {
+  width: 400px; }
+
+.span-8 {
+  width: 460px; }
+
+.span-9 {
+  width: 520px; }
+
+.span-10 {
+  width: 580px; }
+
+.span-11 {
+  width: 640px; }
+
+.span-12 {
+  width: 700px; }
+
+.span-13 {
+  width: 760px; }
+
+.span-14 {
+  width: 820px; }
+
+.span-15 {
+  width: 880px; }
+
+.span-16 {
+  width: 940px; }
+
+.span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16 {
+  margin-right: 20px; }
+
+.single-column, .last-column {
+  margin-right: 0; }
+
+.standalone-column {
+  margin: 0; }
+
+.line, .lastUnit {
+  overflow: hidden;
+  _overflow: visible;
+  _zoom: 1; }
+
+.unit {
+  float: left;
+  _zoom: 1; }
+
+.unitExt {
+  float: right; }
+
+.size1of1 {
+  float: none; }
+
+.size1of2 {
+  width: 50%; }
+
+.size1of3 {
+  width: 33.33333%; }
+
+.size2of3 {
+  width: 66.66666%; }
+
+.size1of4 {
+  width: 25%; }
+
+.size3of4 {
+  width: 75%; }
+
+.size1of5 {
+  width: 20%; }
+
+.size2of5 {
+  width: 40%; }
+
+.size3of5 {
+  width: 60%; }
+
+.size4of5 {
+  width: 80%; }
+
+.lastUnit {
+  float: none;
+  _position: relative;
+  _left: -3px;
+  _margin-right: -3px;
+  width: auto; }
+
+.media {
+  width: auto; }
+
+.micro-bar-chart .axis line, .micro-bar-chart .axis path {
+  fill: none; }
+
+.micro-bar-chart .axis path {
+  display: none; }
+
+.micro-bar-chart .y.axis {
+  fill: orange; }
+  .micro-bar-chart .y.axis path {
+    display: none; }
+  .micro-bar-chart .y.axis .tick line {
+    display: none; }
+  .micro-bar-chart .y.axis .tick text {
+    font-size: 11px;
+    fill: #6B7D8B; }
+  .micro-bar-chart .y.axis .tick:first-child {
+    display: none; }
+
+.micro-bar-chart .x.axis .tick line {
+  stroke: #333f48; }
+
+.micro-bar-chart .x.axis path {
+  display: none; }
+
+.micro-bar-chart .x.axis text {
+  text-transform: uppercase;
+  color: #616e77;
+  font-size: 11px; }
+
+.micro-bar-chart path.line {
+  fill: none;
+  stroke: red;
+  stroke-width: 1.5px; }
+
+.micro-bar-chart .grid line {
+  stroke: #dbe5ec;
+  shape-rendering: crispEdges;
+  width: 1px; }
+
+.micro-bar-chart .grid line:last-child {
+  stroke: #333f48; }
+
+.micro-bar-chart .bars {
+  fill: pink; }
+
+.micro-bar-chart .bar {
+  fill: #646db4;
+  shape-rendering: crispEdges; }
+
+.micro-bar-chart .bar.hover,
+.micro-bar-chart .bar:hover {
+  fill: #be64ac; }
+
+.micro-bar-chart .vertical-bar {
+  fill: transparent;
+  shape-rendering: crispEdges; }
+  .micro-bar-chart .vertical-bar.hover, .micro-bar-chart .vertical-bar:hover {
+    fill: #b72399;
+    opacity: 0.2; }
+
+.micro-bar-chart .hover-bar {
+  fill: transparent; }
+
+.empty-chart-msg {
+  pointer-events: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  fill: #dbe5ec; }
+
+.percentage-chart rect {
+  shape-rendering: crispEdges; }
+
+.percentage-chart text {
+  border-top: 1px solid #6B7D8B;
+  fill: #6B7D8B;
+  font-size: 11px;
+  font-weight: 300;
+  height: 15px;
+  position: relative;
+  text-transform: uppercase; }
+
+.percentage-chart .percent-bar.hover,
+.percentage-chart .color-key.hover {
+  fill: #be64ac !important; }
+
+.percentage-chart .label {
+  fill: #333f48; }
+
+.percentage-chart .label.hover {
+  fill: #333f48;
+  cursor: pointer; }
+
+.summary-charts {
+  padding: 20px 0 0 0;
+  width: 982px;
+  margin: 0 auto; }
+  .summary-charts .chart-container {
+    padding: 10px 0 10px 20px;
+    background: #f6f8fa;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid #f6f8fa; }
+    .summary-charts .chart-container:hover {
+      border-color: #a3afb9; }
+  .summary-charts .percentages {
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+    .summary-charts .percentages .unit {
+      margin-right: 10px;
+      width: 485px;
+      background: #f6f8fa; }
+      .summary-charts .percentages .unit:last-child {
+        margin-right: 0; }
+    .summary-charts .percentages .chart-container {
+      padding-bottom: 5px; }
+  .summary-charts li {
+    margin-top: 15px; }
+  .summary-charts .range {
+    color: #6B7D8B;
+    font-weight: 400;
+    margin-left: 5px; }
+
+.metric {
+  display: table-cell;
+  vertical-align: bottom;
+  height: 60px; }
+
+h1, h2 {
+  color: #222; }
+
+h1 {
+  font-family: "IBM Plex Serif",  georgia, times, serif;
+  font-size: 24px;
+  margin-bottom: 7px;
+  color: #616e77;
+  text-align: center; }
+
+h2 {
+  font-size: 14px;
+  font-weight: 400 !important;
+  margin-bottom: 4px;
+  opacity: 0.8; }
+
+.trend-metric dt {
+  border-top: 1px solid #6B7D8B;
+  text-transform: uppercase;
+  color: #6B7D8B;
+  font-weight: 300;
+  font-size: 11px;
+  height: 15px;
+  position: relative; }
+  .trend-metric dt .lastUnit {
+    position: relative;
+    padding-right: 0px; }
+  .trend-metric dt .summary-tick {
+    background: #6B7D8B;
+    width: 1px;
+    height: 3px;
+    position: absolute; }
+
+.trend-metric.day .summary-tick,
+.trend-metric.month .summary-tick {
+  right: 7px; }
+
+.trend-metric dd {
+  position: relative;
+  height: 60px;
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.trend-metric.hover dd span {
+  color: #b72399; }
+
+.trend-metric.hover dt {
+  color: #333f48; }
+
+.trend-metric .hover-value,
+.trend-metric .hover-date {
+  display: none; }
+
+.metric {
+  height: 51px; }
+  .metric dd span {
+    position: absolute;
+    bottom: 3px;
+    color: #616e77;
+    font-weight: 300;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1; }
+
+.home-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-family: "IBM Plex Sans", helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 9px 14px 9px 14px;
+  border: 1px solid #616e77;
+  border-radius: 3px;
+  background-color: none;
+  outline: none;
+  cursor: pointer; }
+  .home-button, .home-button:hover {
+    text-decoration: none;
+    color: #616e77 !important; }
+  .home-button:hover {
+    background: #f3f3f3; }

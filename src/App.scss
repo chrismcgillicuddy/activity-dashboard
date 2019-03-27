@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,500');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500');
+
+@import 'styles/common.scss';
+@import 'styles/reset.scss';
+
+// MICRO BAR CHART
+@import 'styles/micro-bar-chart.scss';
+
+// PERCENTAGE CHART
+@import 'styles/percentage-chart.scss';
+
+// TREND CHART
+@import 'styles/trend-chart.scss';
+
+.home-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-family: $font-stack;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 9px 14px 9px 14px;
+  border: 1px solid $dark-grey;
+  border-radius: 3px;
+  background-color: none;
+  outline: none;
+  cursor: pointer;
+  &,
+  &:hover {
+    text-decoration: none;
+    color: $dark-grey !important;
+  }
+  &:hover {
+    background: #f3f3f3;
+  }
+}

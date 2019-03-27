@@ -1,0 +1,98 @@
+.summary-charts {
+  padding: 20px 0 0 0;
+  width: 982px;
+  margin: 0 auto; }
+  .summary-charts .chart-container {
+    padding: 10px 0 10px 20px;
+    background: #f6f8fa;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid #f6f8fa; }
+    .summary-charts .chart-container:hover {
+      border-color: #a3afb9; }
+  .summary-charts .percentages {
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+    .summary-charts .percentages .unit {
+      margin-right: 10px;
+      width: 485px;
+      background: #f6f8fa; }
+      .summary-charts .percentages .unit:last-child {
+        margin-right: 0; }
+    .summary-charts .percentages .chart-container {
+      padding-bottom: 5px; }
+  .summary-charts li {
+    margin-top: 15px; }
+  .summary-charts .range {
+    color: #6B7D8B;
+    font-weight: 400;
+    margin-left: 5px; }
+
+.metric {
+  display: table-cell;
+  vertical-align: bottom;
+  height: 60px; }
+
+h1, h2 {
+  color: #222; }
+
+h1 {
+  font-family: "IBM Plex Serif",  georgia, times, serif;
+  font-size: 24px;
+  margin-bottom: 7px;
+  color: #616e77;
+  text-align: center; }
+
+h2 {
+  font-size: 14px;
+  font-weight: 400 !important;
+  margin-bottom: 4px;
+  opacity: 0.8; }
+
+.trend-metric dt {
+  border-top: 1px solid #6B7D8B;
+  text-transform: uppercase;
+  color: #6B7D8B;
+  font-weight: 300;
+  font-size: 11px;
+  height: 15px;
+  position: relative; }
+  .trend-metric dt .lastUnit {
+    position: relative;
+    padding-right: 0px; }
+  .trend-metric dt .summary-tick {
+    background: #6B7D8B;
+    width: 1px;
+    height: 3px;
+    position: absolute; }
+
+.trend-metric.day .summary-tick,
+.trend-metric.month .summary-tick {
+  right: 7px; }
+
+.trend-metric dd {
+  position: relative;
+  height: 60px;
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.trend-metric.hover dd span {
+  color: #b72399; }
+
+.trend-metric.hover dt {
+  color: #333f48; }
+
+.trend-metric .hover-value,
+.trend-metric .hover-date {
+  display: none; }
+
+.metric {
+  height: 51px; }
+  .metric dd span {
+    position: absolute;
+    bottom: 3px;
+    color: #616e77;
+    font-weight: 300;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1; }

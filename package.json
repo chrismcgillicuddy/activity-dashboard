@@ -1,0 +1,29 @@
+{
+  "name": "activity-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://dpqb.net/dashboard",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "d3": "^3.5.17",
+    "gh-pages": "^1.0.0",
+    "lodash": "^4.17.4",
+    "node-sass-chokidar": "0.0.2",
+    "npm-run-all": "^4.0.2",
+    "react-scripts": "1.0.1"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}

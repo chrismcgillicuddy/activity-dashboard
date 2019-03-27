@@ -1,0 +1,119 @@
+@import 'common.scss';
+
+.summary-charts {
+  padding: 20px 0 0 0;
+  width: 982px;
+  margin: 0 auto;
+  .chart-container {
+    padding: 10px 0 10px 20px;
+    background: $lightest-grey;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid $lightest-grey;
+    &:hover {
+      border-color: lighten($grey, 20%);
+    }
+  }
+  .percentages {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    .unit {
+      margin-right: 10px;
+      width: 485px;
+      background: $lightest-grey;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    & .chart-container {
+      padding-bottom: 5px;
+    }
+  }
+  li {
+    margin-top: 15px;
+  }
+  .range {
+    color: $grey;
+    font-weight: 400;
+    margin-left: 5px;
+  }
+}
+.metric {
+  display: table-cell;
+  vertical-align: bottom;
+  height: 60px;
+}
+h1, h2{
+  color: $darker-grey;
+}
+h1 {
+  // font-family: 'Merriweather', serif;
+  font-family: "IBM Plex Serif",  georgia, times, serif;
+
+  font-size: 24px;
+  margin-bottom: 7px;
+  color: $dark-grey;
+  text-align: center;
+}
+h2 {
+  font-size: 14px;
+  font-weight: 400 !important;
+  margin-bottom: 4px;
+  opacity: 0.8;
+}
+.trend-metric {
+  dt {
+    border-top: 1px solid $grey;
+    text-transform: uppercase;
+    color: $grey;
+    font-weight: 300;
+    font-size: 11px;
+    height: 15px;
+    position: relative;
+    .lastUnit {
+      position: relative;
+      padding-right: 0px;
+    }
+    .summary-tick {
+      background: $grey;
+      width: 1px;
+      height: 3px;
+      position: absolute;
+    }
+  }
+  &.day .summary-tick,
+  &.month .summary-tick {
+    right: 7px;
+  }
+  dd {
+    position: relative;
+    height: 60px;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  &.hover {
+    dd span {
+      color: $chart-highlight;
+    }
+    dt {
+      color: $darkest-grey;
+    }
+  }
+  .hover-value,
+  .hover-date {
+    display: none;
+  }
+}
+.metric {
+  height: 51px;
+  dd span {
+    position: absolute;
+    bottom: 3px;
+    color: $dark-grey;
+    font-weight: 300;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    // font-family: "IBM Plex Mono", monospace;
+    line-height: 1;
+  }
+}

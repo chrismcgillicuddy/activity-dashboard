@@ -1,0 +1,29 @@
+@import 'common.scss';
+
+.percentage-chart {
+  rect {
+    shape-rendering: crispEdges;
+  }
+  text {
+   border-top: 1px solid $grey;
+   fill: $grey;
+   font-size: 11px;
+   font-weight: 300;
+   height: 15px;
+   position: relative;
+   text-transform: uppercase;
+  }
+  .percent-bar,
+  .color-key {
+    &.hover {
+      fill: $chart-orange !important;
+    }
+  }
+  .label {
+    fill: $darkest-grey;
+  }
+  .label.hover {
+    fill: $darkest-grey;
+    cursor: pointer;
+  }
+}

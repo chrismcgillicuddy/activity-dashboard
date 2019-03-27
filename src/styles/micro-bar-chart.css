@@ -1,0 +1,68 @@
+.micro-bar-chart .axis line, .micro-bar-chart .axis path {
+  fill: none; }
+
+.micro-bar-chart .axis path {
+  display: none; }
+
+.micro-bar-chart .y.axis {
+  fill: orange; }
+  .micro-bar-chart .y.axis path {
+    display: none; }
+  .micro-bar-chart .y.axis .tick line {
+    display: none; }
+  .micro-bar-chart .y.axis .tick text {
+    font-size: 11px;
+    fill: #6B7D8B; }
+  .micro-bar-chart .y.axis .tick:first-child {
+    display: none; }
+
+.micro-bar-chart .x.axis .tick line {
+  stroke: #333f48; }
+
+.micro-bar-chart .x.axis path {
+  display: none; }
+
+.micro-bar-chart .x.axis text {
+  text-transform: uppercase;
+  color: #616e77;
+  font-size: 11px; }
+
+.micro-bar-chart path.line {
+  fill: none;
+  stroke: red;
+  stroke-width: 1.5px; }
+
+.micro-bar-chart .grid line {
+  stroke: #dbe5ec;
+  shape-rendering: crispEdges;
+  width: 1px; }
+
+.micro-bar-chart .grid line:last-child {
+  stroke: #333f48; }
+
+.micro-bar-chart .bars {
+  fill: pink; }
+
+.micro-bar-chart .bar {
+  fill: #646db4;
+  shape-rendering: crispEdges; }
+
+.micro-bar-chart .bar.hover,
+.micro-bar-chart .bar:hover {
+  fill: #be64ac; }
+
+.micro-bar-chart .vertical-bar {
+  fill: transparent;
+  shape-rendering: crispEdges; }
+  .micro-bar-chart .vertical-bar.hover, .micro-bar-chart .vertical-bar:hover {
+    fill: #b72399;
+    opacity: 0.2; }
+
+.micro-bar-chart .hover-bar {
+  fill: transparent; }
+
+.empty-chart-msg {
+  pointer-events: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  fill: #dbe5ec; }
